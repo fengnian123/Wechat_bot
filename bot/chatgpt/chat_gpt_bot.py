@@ -3,7 +3,7 @@
 import time
 
 import openai
-import openai.error
+# import openai.error
 import requests
 from common import const
 from bot.bot import Bot
