@@ -1,0 +1,253 @@
+[INFO][2024-12-10 10:15:38][config.py:270] - 配置文件不存在，将使用config-template.json模板
+[INFO][2024-12-10 10:15:38][config.py:299] - [INIT] load config: {'channel_type': 'wx', 'model': '', 'open_ai_api_key': 'YOU*****KEY', 'claude_api_key': 'YOU*****KEY', 'text_to_image': 'dall-e-2', 'voice_to_text': 'openai', 'text_to_voice': 'openai', 'proxy': '', 'hot_reload': False, 'single_chat_prefix': ['bot', '@bot'], 'single_chat_reply_prefix': '[bot] ', 'group_chat_prefix': ['@bot'], 'group_name_white_list': ['ChatGPT测试群', 'ChatGPT测试群2'], 'image_create_prefix': ['画'], 'speech_recognition': True, 'group_speech_recognition': False, 'voice_reply_voice': False, 'conversation_max_tokens': 2500, 'expires_in_seconds': 3600, 'character_desc': '你是基于大语言模型的AI智能助手，旨在回答并解决人们的任何问题，并且可以使用多种语言与人交流。', 'temperature': 0.7, 'subscribe_msg': '感谢您的关注！\n这里是AI智能助手，可以自由对话。\n支持语音对话。\n支持图片输入。\n支持图片输出，画字开头的消息将按要求创作图片。\n支持tool、角色扮演和文字冒险等丰富的插件。\n输入{trigger_prefix}#help 查看详细指令。', 'use_linkai': False, 'linkai_api_key': '*****', 'linkai_app_code': ''}
+[INFO][2024-12-10 10:15:38][config.py:225] - [Config] User datas file not found, ignore.
+[INFO][2024-12-10 10:15:39][plugin_manager.py:50] - Loading plugins config...
+[INFO][2024-12-10 10:15:39][plugin_manager.py:88] - Scaning plugins ...
+[INFO][2024-12-10 10:15:39][plugin_manager.py:41] - Plugin Role_v1.0 registered, path=./plugins/role
+[INFO][2024-12-10 10:15:39][plugin_manager.py:41] - Plugin linkai_v0.1.0 registered, path=./plugins/linkai
+[INFO][2024-12-10 10:15:39][plugin_manager.py:41] - Plugin Dungeon_v1.0 registered, path=./plugins/dungeon
+[INFO][2024-12-10 10:15:39][plugin_manager.py:41] - Plugin BDunit_v0.1 registered, path=./plugins/bdunit
+[INFO][2024-12-10 10:15:39][plugin_manager.py:41] - Plugin Finish_v1.0 registered, path=./plugins/finish
+[INFO][2024-12-10 10:15:39][plugin_manager.py:41] - Plugin Godcmd_v1.0 registered, path=./plugins/godcmd
+[INFO][2024-12-10 10:15:39][plugin_manager.py:41] - Plugin Hello_v0.1 registered, path=./plugins/hello
+[INFO][2024-12-10 10:15:39][plugin_manager.py:41] - Plugin Banwords_v1.0 registered, path=./plugins/banwords
+[INFO][2024-12-10 10:15:39][plugin_manager.py:41] - Plugin Keyword_v0.1 registered, path=./plugins/keyword
+[WARNING][2024-12-10 10:15:39][plugin_manager.py:113] - Failed to import plugin tool: No module named 'chatgpt_tool_hub'
+[INFO][2024-12-10 10:15:39][plugin_manager.py:123] - Plugin GODCMD not found in pconfig, adding to pconfig...
+[INFO][2024-12-10 10:15:39][plugin_manager.py:123] - Plugin KEYWORD not found in pconfig, adding to pconfig...
+[INFO][2024-12-10 10:15:39][plugin_manager.py:123] - Plugin BANWORDS not found in pconfig, adding to pconfig...
+[INFO][2024-12-10 10:15:39][plugin_manager.py:123] - Plugin LINKAI not found in pconfig, adding to pconfig...
+[INFO][2024-12-10 10:15:39][plugin_manager.py:123] - Plugin ROLE not found in pconfig, adding to pconfig...
+[INFO][2024-12-10 10:15:39][plugin_manager.py:123] - Plugin DUNGEON not found in pconfig, adding to pconfig...
+[INFO][2024-12-10 10:15:39][plugin_manager.py:123] - Plugin BDUNIT not found in pconfig, adding to pconfig...
+[INFO][2024-12-10 10:15:39][plugin_manager.py:123] - Plugin HELLO not found in pconfig, adding to pconfig...
+[INFO][2024-12-10 10:15:39][plugin_manager.py:123] - Plugin FINISH not found in pconfig, adding to pconfig...
+[INFO][2024-12-10 10:15:39][godcmd.py:194] - [Godcmd] 因未设置口令，本次的临时口令为1985。
+[INFO][2024-12-10 10:15:39][godcmd.py:210] - [Godcmd] inited
+[INFO][2024-12-10 10:15:39][keyword.py:40] - [keyword] {}
+[INFO][2024-12-10 10:15:39][keyword.py:42] - [keyword] inited.
+[WARNING][2024-12-10 10:15:39][banwords.py:54] - [Banwords] init failed, ignore or see https://github.com/zhayujie/chatgpt-on-wechat/tree/master/plugins/banwords .
+[WARNING][2024-12-10 10:15:39][plugin_manager.py:150] - Failed to init BANWORDS, diabled. [Errno 2] No such file or directory: '/Users/mingjiangao/Desktop/robot/chatgpt-on-wechat/plugins/banwords/banwords.txt'
+[INFO][2024-12-10 10:15:39][linkai.py:35] - [LinkAI] inited, config={'group_app_map': {'测试群名1': 'default', '测试群名2': 'Kv2fXJcH'}, 'midjourney': {'enabled': False, 'auto_translate': True, 'img_proxy': True, 'max_tasks': 3, 'max_tasks_per_user': 1, 'use_image_create_prefix': True}, 'summary': {'enabled': False, 'group_enabled': True, 'max_file_size': 5000, 'type': ['FILE', 'SHARING']}}
+[INFO][2024-12-10 10:15:39][role.py:69] - [Role] inited
+[INFO][2024-12-10 10:15:39][dungeon.py:56] - [Dungeon] inited
+[WARNING][2024-12-10 10:15:39][bdunit.py:42] - [BDunit] init failed, ignore 
+[WARNING][2024-12-10 10:15:39][plugin_manager.py:150] - Failed to init BDUNIT, diabled. config.json not found
+[INFO][2024-12-10 10:15:39][hello.py:38] - [Hello] inited
+[INFO][2024-12-10 10:15:39][finish.py:23] - [Finish] inited
+[ERROR][2024-12-10 10:15:40][wechat_channel.py:138] - No module named 'qrcode'
+Traceback (most recent call last):
+  File "/Users/mingjiangao/Desktop/robot/chatgpt-on-wechat/channel/wechat/wechat_channel.py", line 124, in startup
+    itchat.auto_login(
+  File "/Users/mingjiangao/Desktop/robot/chatgpt-on-wechat/lib/itchat/components/register.py", line 38, in auto_login
+    self.login(enableCmdQR=enableCmdQR, picDir=picDir, qrCallback=qrCallback,
+  File "/Users/mingjiangao/Desktop/robot/chatgpt-on-wechat/lib/itchat/components/login.py", line 56, in login
+    qrStorage = self.get_QR(enableCmdQR=enableCmdQR,
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mingjiangao/Desktop/robot/chatgpt-on-wechat/lib/itchat/components/login.py", line 132, in get_QR
+    qrCallback(uuid=uuid, status='0', qrcode=qrStorage.getvalue())
+  File "/Users/mingjiangao/Desktop/robot/chatgpt-on-wechat/channel/wechat/wechat_channel.py", line 86, in qrCallback
+    import qrcode
+ModuleNotFoundError: No module named 'qrcode'
+[INFO][2024-12-10 10:15:49][app.py:19] - signal 2 received, exiting...
+[INFO][2024-12-10 10:15:49][config.py:234] - [Config] User datas saved.
+[INFO][2024-12-10 10:17:19][config.py:270] - 配置文件不存在，将使用config-template.json模板
+[INFO][2024-12-10 10:17:19][config.py:299] - [INIT] load config: {'channel_type': 'wx', 'model': '', 'open_ai_api_key': 'YOU*****KEY', 'claude_api_key': 'YOU*****KEY', 'text_to_image': 'dall-e-2', 'voice_to_text': 'openai', 'text_to_voice': 'openai', 'proxy': '', 'hot_reload': False, 'single_chat_prefix': ['bot', '@bot'], 'single_chat_reply_prefix': '[bot] ', 'group_chat_prefix': ['@bot'], 'group_name_white_list': ['ChatGPT测试群', 'ChatGPT测试群2'], 'image_create_prefix': ['画'], 'speech_recognition': True, 'group_speech_recognition': False, 'voice_reply_voice': False, 'conversation_max_tokens': 2500, 'expires_in_seconds': 3600, 'character_desc': '你是基于大语言模型的AI智能助手，旨在回答并解决人们的任何问题，并且可以使用多种语言与人交流。', 'temperature': 0.7, 'subscribe_msg': '感谢您的关注！\n这里是AI智能助手，可以自由对话。\n支持语音对话。\n支持图片输入。\n支持图片输出，画字开头的消息将按要求创作图片。\n支持tool、角色扮演和文字冒险等丰富的插件。\n输入{trigger_prefix}#help 查看详细指令。', 'use_linkai': False, 'linkai_api_key': '*****', 'linkai_app_code': ''}
+[INFO][2024-12-10 10:17:19][config.py:223] - [Config] User datas loaded.
+[INFO][2024-12-10 10:17:20][plugin_manager.py:50] - Loading plugins config...
+[INFO][2024-12-10 10:17:20][plugin_manager.py:88] - Scaning plugins ...
+[INFO][2024-12-10 10:17:20][plugin_manager.py:41] - Plugin Role_v1.0 registered, path=./plugins/role
+[INFO][2024-12-10 10:17:20][plugin_manager.py:41] - Plugin linkai_v0.1.0 registered, path=./plugins/linkai
+[INFO][2024-12-10 10:17:20][plugin_manager.py:41] - Plugin Dungeon_v1.0 registered, path=./plugins/dungeon
+[INFO][2024-12-10 10:17:20][plugin_manager.py:41] - Plugin BDunit_v0.1 registered, path=./plugins/bdunit
+[INFO][2024-12-10 10:17:20][plugin_manager.py:41] - Plugin Finish_v1.0 registered, path=./plugins/finish
+[INFO][2024-12-10 10:17:20][plugin_manager.py:41] - Plugin Godcmd_v1.0 registered, path=./plugins/godcmd
+[INFO][2024-12-10 10:17:20][plugin_manager.py:41] - Plugin Hello_v0.1 registered, path=./plugins/hello
+[INFO][2024-12-10 10:17:20][plugin_manager.py:41] - Plugin Banwords_v1.0 registered, path=./plugins/banwords
+[INFO][2024-12-10 10:17:20][plugin_manager.py:41] - Plugin Keyword_v0.1 registered, path=./plugins/keyword
+[WARNING][2024-12-10 10:17:20][plugin_manager.py:113] - Failed to import plugin tool: No module named 'chatgpt_tool_hub'
+[INFO][2024-12-10 10:17:20][godcmd.py:194] - [Godcmd] 因未设置口令，本次的临时口令为4670。
+[INFO][2024-12-10 10:17:20][godcmd.py:210] - [Godcmd] inited
+[INFO][2024-12-10 10:17:20][keyword.py:40] - [keyword] {}
+[INFO][2024-12-10 10:17:20][keyword.py:42] - [keyword] inited.
+[INFO][2024-12-10 10:17:20][linkai.py:35] - [LinkAI] inited, config={'group_app_map': {'测试群名1': 'default', '测试群名2': 'Kv2fXJcH'}, 'midjourney': {'enabled': False, 'auto_translate': True, 'img_proxy': True, 'max_tasks': 3, 'max_tasks_per_user': 1, 'use_image_create_prefix': True}, 'summary': {'enabled': False, 'group_enabled': True, 'max_file_size': 5000, 'type': ['FILE', 'SHARING']}}
+[INFO][2024-12-10 10:17:20][role.py:69] - [Role] inited
+[INFO][2024-12-10 10:17:20][dungeon.py:56] - [Dungeon] inited
+[INFO][2024-12-10 10:17:20][hello.py:38] - [Hello] inited
+[INFO][2024-12-10 10:17:20][finish.py:23] - [Finish] inited
+[INFO][2024-12-10 10:17:49][config.py:270] - 配置文件不存在，将使用config-template.json模板
+[INFO][2024-12-10 10:17:49][config.py:299] - [INIT] load config: {'channel_type': 'wx', 'model': '', 'open_ai_api_key': 'YOU*****KEY', 'claude_api_key': 'YOU*****KEY', 'text_to_image': 'dall-e-2', 'voice_to_text': 'openai', 'text_to_voice': 'openai', 'proxy': '', 'hot_reload': False, 'single_chat_prefix': ['bot', '@bot'], 'single_chat_reply_prefix': '[bot] ', 'group_chat_prefix': ['@bot'], 'group_name_white_list': ['ChatGPT测试群', 'ChatGPT测试群2'], 'image_create_prefix': ['画'], 'speech_recognition': True, 'group_speech_recognition': False, 'voice_reply_voice': False, 'conversation_max_tokens': 2500, 'expires_in_seconds': 3600, 'character_desc': '你是基于大语言模型的AI智能助手，旨在回答并解决人们的任何问题，并且可以使用多种语言与人交流。', 'temperature': 0.7, 'subscribe_msg': '感谢您的关注！\n这里是AI智能助手，可以自由对话。\n支持语音对话。\n支持图片输入。\n支持图片输出，画字开头的消息将按要求创作图片。\n支持tool、角色扮演和文字冒险等丰富的插件。\n输入{trigger_prefix}#help 查看详细指令。', 'use_linkai': False, 'linkai_api_key': '*****', 'linkai_app_code': ''}
+[INFO][2024-12-10 10:17:49][config.py:223] - [Config] User datas loaded.
+[INFO][2024-12-10 10:17:49][plugin_manager.py:50] - Loading plugins config...
+[INFO][2024-12-10 10:17:49][plugin_manager.py:88] - Scaning plugins ...
+[INFO][2024-12-10 10:17:49][plugin_manager.py:41] - Plugin Role_v1.0 registered, path=./plugins/role
+[INFO][2024-12-10 10:17:49][plugin_manager.py:41] - Plugin linkai_v0.1.0 registered, path=./plugins/linkai
+[INFO][2024-12-10 10:17:49][plugin_manager.py:41] - Plugin Dungeon_v1.0 registered, path=./plugins/dungeon
+[INFO][2024-12-10 10:17:49][plugin_manager.py:41] - Plugin BDunit_v0.1 registered, path=./plugins/bdunit
+[INFO][2024-12-10 10:17:49][plugin_manager.py:41] - Plugin Finish_v1.0 registered, path=./plugins/finish
+[INFO][2024-12-10 10:17:49][plugin_manager.py:41] - Plugin Godcmd_v1.0 registered, path=./plugins/godcmd
+[INFO][2024-12-10 10:17:49][plugin_manager.py:41] - Plugin Hello_v0.1 registered, path=./plugins/hello
+[INFO][2024-12-10 10:17:49][plugin_manager.py:41] - Plugin Banwords_v1.0 registered, path=./plugins/banwords
+[INFO][2024-12-10 10:17:49][plugin_manager.py:41] - Plugin Keyword_v0.1 registered, path=./plugins/keyword
+[WARNING][2024-12-10 10:17:49][plugin_manager.py:113] - Failed to import plugin tool: No module named 'chatgpt_tool_hub'
+[INFO][2024-12-10 10:17:49][godcmd.py:194] - [Godcmd] 因未设置口令，本次的临时口令为7938。
+[INFO][2024-12-10 10:17:49][godcmd.py:210] - [Godcmd] inited
+[INFO][2024-12-10 10:17:49][keyword.py:40] - [keyword] {}
+[INFO][2024-12-10 10:17:49][keyword.py:42] - [keyword] inited.
+[INFO][2024-12-10 10:17:49][linkai.py:35] - [LinkAI] inited, config={'group_app_map': {'测试群名1': 'default', '测试群名2': 'Kv2fXJcH'}, 'midjourney': {'enabled': False, 'auto_translate': True, 'img_proxy': True, 'max_tasks': 3, 'max_tasks_per_user': 1, 'use_image_create_prefix': True}, 'summary': {'enabled': False, 'group_enabled': True, 'max_file_size': 5000, 'type': ['FILE', 'SHARING']}}
+[INFO][2024-12-10 10:17:49][role.py:69] - [Role] inited
+[INFO][2024-12-10 10:17:49][dungeon.py:56] - [Dungeon] inited
+[INFO][2024-12-10 10:17:49][hello.py:38] - [Hello] inited
+[INFO][2024-12-10 10:17:49][finish.py:23] - [Finish] inited
+[INFO][2024-12-10 10:18:21][config.py:270] - 配置文件不存在，将使用config-template.json模板
+[INFO][2024-12-10 10:18:21][config.py:299] - [INIT] load config: {'channel_type': 'wx', 'model': '', 'open_ai_api_key': 'YOU*****KEY', 'claude_api_key': 'YOU*****KEY', 'text_to_image': 'dall-e-2', 'voice_to_text': 'openai', 'text_to_voice': 'openai', 'proxy': '', 'hot_reload': False, 'single_chat_prefix': ['bot', '@bot'], 'single_chat_reply_prefix': '[bot] ', 'group_chat_prefix': ['@bot'], 'group_name_white_list': ['ChatGPT测试群', 'ChatGPT测试群2'], 'image_create_prefix': ['画'], 'speech_recognition': True, 'group_speech_recognition': False, 'voice_reply_voice': False, 'conversation_max_tokens': 2500, 'expires_in_seconds': 3600, 'character_desc': '你是基于大语言模型的AI智能助手，旨在回答并解决人们的任何问题，并且可以使用多种语言与人交流。', 'temperature': 0.7, 'subscribe_msg': '感谢您的关注！\n这里是AI智能助手，可以自由对话。\n支持语音对话。\n支持图片输入。\n支持图片输出，画字开头的消息将按要求创作图片。\n支持tool、角色扮演和文字冒险等丰富的插件。\n输入{trigger_prefix}#help 查看详细指令。', 'use_linkai': False, 'linkai_api_key': '*****', 'linkai_app_code': ''}
+[INFO][2024-12-10 10:18:21][config.py:223] - [Config] User datas loaded.
+[INFO][2024-12-10 10:18:21][plugin_manager.py:50] - Loading plugins config...
+[INFO][2024-12-10 10:18:21][plugin_manager.py:88] - Scaning plugins ...
+[INFO][2024-12-10 10:18:21][plugin_manager.py:41] - Plugin Role_v1.0 registered, path=./plugins/role
+[INFO][2024-12-10 10:18:21][plugin_manager.py:41] - Plugin linkai_v0.1.0 registered, path=./plugins/linkai
+[INFO][2024-12-10 10:18:21][plugin_manager.py:41] - Plugin Dungeon_v1.0 registered, path=./plugins/dungeon
+[INFO][2024-12-10 10:18:21][plugin_manager.py:41] - Plugin BDunit_v0.1 registered, path=./plugins/bdunit
+[INFO][2024-12-10 10:18:21][plugin_manager.py:41] - Plugin Finish_v1.0 registered, path=./plugins/finish
+[INFO][2024-12-10 10:18:21][plugin_manager.py:41] - Plugin Godcmd_v1.0 registered, path=./plugins/godcmd
+[INFO][2024-12-10 10:18:21][plugin_manager.py:41] - Plugin Hello_v0.1 registered, path=./plugins/hello
+[INFO][2024-12-10 10:18:21][plugin_manager.py:41] - Plugin Banwords_v1.0 registered, path=./plugins/banwords
+[INFO][2024-12-10 10:18:21][plugin_manager.py:41] - Plugin Keyword_v0.1 registered, path=./plugins/keyword
+[WARNING][2024-12-10 10:18:21][plugin_manager.py:113] - Failed to import plugin tool: No module named 'chatgpt_tool_hub'
+[INFO][2024-12-10 10:18:21][godcmd.py:194] - [Godcmd] 因未设置口令，本次的临时口令为9134。
+[INFO][2024-12-10 10:18:21][godcmd.py:210] - [Godcmd] inited
+[INFO][2024-12-10 10:18:21][keyword.py:40] - [keyword] {}
+[INFO][2024-12-10 10:18:21][keyword.py:42] - [keyword] inited.
+[INFO][2024-12-10 10:18:21][linkai.py:35] - [LinkAI] inited, config={'group_app_map': {'测试群名1': 'default', '测试群名2': 'Kv2fXJcH'}, 'midjourney': {'enabled': False, 'auto_translate': True, 'img_proxy': True, 'max_tasks': 3, 'max_tasks_per_user': 1, 'use_image_create_prefix': True}, 'summary': {'enabled': False, 'group_enabled': True, 'max_file_size': 5000, 'type': ['FILE', 'SHARING']}}
+[INFO][2024-12-10 10:18:21][role.py:69] - [Role] inited
+[INFO][2024-12-10 10:18:21][dungeon.py:56] - [Dungeon] inited
+[INFO][2024-12-10 10:18:21][hello.py:38] - [Hello] inited
+[INFO][2024-12-10 10:18:21][finish.py:23] - [Finish] inited
+[INFO][2024-12-10 10:18:46][config.py:270] - 配置文件不存在，将使用config-template.json模板
+[INFO][2024-12-10 10:18:46][config.py:299] - [INIT] load config: {'channel_type': 'wx', 'model': '', 'open_ai_api_key': 'YOU*****KEY', 'claude_api_key': 'YOU*****KEY', 'text_to_image': 'dall-e-2', 'voice_to_text': 'openai', 'text_to_voice': 'openai', 'proxy': '', 'hot_reload': False, 'single_chat_prefix': ['bot', '@bot'], 'single_chat_reply_prefix': '[bot] ', 'group_chat_prefix': ['@bot'], 'group_name_white_list': ['ChatGPT测试群', 'ChatGPT测试群2'], 'image_create_prefix': ['画'], 'speech_recognition': True, 'group_speech_recognition': False, 'voice_reply_voice': False, 'conversation_max_tokens': 2500, 'expires_in_seconds': 3600, 'character_desc': '你是基于大语言模型的AI智能助手，旨在回答并解决人们的任何问题，并且可以使用多种语言与人交流。', 'temperature': 0.7, 'subscribe_msg': '感谢您的关注！\n这里是AI智能助手，可以自由对话。\n支持语音对话。\n支持图片输入。\n支持图片输出，画字开头的消息将按要求创作图片。\n支持tool、角色扮演和文字冒险等丰富的插件。\n输入{trigger_prefix}#help 查看详细指令。', 'use_linkai': False, 'linkai_api_key': '*****', 'linkai_app_code': ''}
+[INFO][2024-12-10 10:18:46][config.py:223] - [Config] User datas loaded.
+[INFO][2024-12-10 10:18:47][plugin_manager.py:50] - Loading plugins config...
+[INFO][2024-12-10 10:18:47][plugin_manager.py:88] - Scaning plugins ...
+[INFO][2024-12-10 10:18:47][plugin_manager.py:41] - Plugin Role_v1.0 registered, path=./plugins/role
+[INFO][2024-12-10 10:18:47][plugin_manager.py:41] - Plugin linkai_v0.1.0 registered, path=./plugins/linkai
+[INFO][2024-12-10 10:18:47][plugin_manager.py:41] - Plugin Dungeon_v1.0 registered, path=./plugins/dungeon
+[INFO][2024-12-10 10:18:47][plugin_manager.py:41] - Plugin BDunit_v0.1 registered, path=./plugins/bdunit
+[INFO][2024-12-10 10:18:47][plugin_manager.py:41] - Plugin Finish_v1.0 registered, path=./plugins/finish
+[INFO][2024-12-10 10:18:47][plugin_manager.py:41] - Plugin Godcmd_v1.0 registered, path=./plugins/godcmd
+[INFO][2024-12-10 10:18:47][plugin_manager.py:41] - Plugin Hello_v0.1 registered, path=./plugins/hello
+[INFO][2024-12-10 10:18:47][plugin_manager.py:41] - Plugin Banwords_v1.0 registered, path=./plugins/banwords
+[INFO][2024-12-10 10:18:47][plugin_manager.py:41] - Plugin Keyword_v0.1 registered, path=./plugins/keyword
+[WARNING][2024-12-10 10:18:47][plugin_manager.py:113] - Failed to import plugin tool: No module named 'chatgpt_tool_hub'
+[INFO][2024-12-10 10:18:47][godcmd.py:194] - [Godcmd] 因未设置口令，本次的临时口令为2495。
+[INFO][2024-12-10 10:18:47][godcmd.py:210] - [Godcmd] inited
+[INFO][2024-12-10 10:18:47][keyword.py:40] - [keyword] {}
+[INFO][2024-12-10 10:18:47][keyword.py:42] - [keyword] inited.
+[INFO][2024-12-10 10:18:47][linkai.py:35] - [LinkAI] inited, config={'group_app_map': {'测试群名1': 'default', '测试群名2': 'Kv2fXJcH'}, 'midjourney': {'enabled': False, 'auto_translate': True, 'img_proxy': True, 'max_tasks': 3, 'max_tasks_per_user': 1, 'use_image_create_prefix': True}, 'summary': {'enabled': False, 'group_enabled': True, 'max_file_size': 5000, 'type': ['FILE', 'SHARING']}}
+[INFO][2024-12-10 10:18:47][role.py:69] - [Role] inited
+[INFO][2024-12-10 10:18:47][dungeon.py:56] - [Dungeon] inited
+[INFO][2024-12-10 10:18:47][hello.py:38] - [Hello] inited
+[INFO][2024-12-10 10:18:47][finish.py:23] - [Finish] inited
+[INFO][2024-12-10 10:19:13][config.py:270] - 配置文件不存在，将使用config-template.json模板
+[INFO][2024-12-10 10:19:13][config.py:299] - [INIT] load config: {'channel_type': 'wx', 'model': '', 'open_ai_api_key': 'YOU*****KEY', 'claude_api_key': 'YOU*****KEY', 'text_to_image': 'dall-e-2', 'voice_to_text': 'openai', 'text_to_voice': 'openai', 'proxy': '', 'hot_reload': False, 'single_chat_prefix': ['bot', '@bot'], 'single_chat_reply_prefix': '[bot] ', 'group_chat_prefix': ['@bot'], 'group_name_white_list': ['ChatGPT测试群', 'ChatGPT测试群2'], 'image_create_prefix': ['画'], 'speech_recognition': True, 'group_speech_recognition': False, 'voice_reply_voice': False, 'conversation_max_tokens': 2500, 'expires_in_seconds': 3600, 'character_desc': '你是基于大语言模型的AI智能助手，旨在回答并解决人们的任何问题，并且可以使用多种语言与人交流。', 'temperature': 0.7, 'subscribe_msg': '感谢您的关注！\n这里是AI智能助手，可以自由对话。\n支持语音对话。\n支持图片输入。\n支持图片输出，画字开头的消息将按要求创作图片。\n支持tool、角色扮演和文字冒险等丰富的插件。\n输入{trigger_prefix}#help 查看详细指令。', 'use_linkai': False, 'linkai_api_key': '*****', 'linkai_app_code': ''}
+[INFO][2024-12-10 10:19:13][config.py:223] - [Config] User datas loaded.
+[INFO][2024-12-10 10:19:13][plugin_manager.py:50] - Loading plugins config...
+[INFO][2024-12-10 10:19:13][plugin_manager.py:88] - Scaning plugins ...
+[INFO][2024-12-10 10:19:13][plugin_manager.py:41] - Plugin Role_v1.0 registered, path=./plugins/role
+[INFO][2024-12-10 10:19:13][plugin_manager.py:41] - Plugin linkai_v0.1.0 registered, path=./plugins/linkai
+[INFO][2024-12-10 10:19:13][plugin_manager.py:41] - Plugin Dungeon_v1.0 registered, path=./plugins/dungeon
+[INFO][2024-12-10 10:19:13][plugin_manager.py:41] - Plugin BDunit_v0.1 registered, path=./plugins/bdunit
+[INFO][2024-12-10 10:19:13][plugin_manager.py:41] - Plugin Finish_v1.0 registered, path=./plugins/finish
+[INFO][2024-12-10 10:19:13][plugin_manager.py:41] - Plugin Godcmd_v1.0 registered, path=./plugins/godcmd
+[INFO][2024-12-10 10:19:13][plugin_manager.py:41] - Plugin Hello_v0.1 registered, path=./plugins/hello
+[INFO][2024-12-10 10:19:13][plugin_manager.py:41] - Plugin Banwords_v1.0 registered, path=./plugins/banwords
+[INFO][2024-12-10 10:19:13][plugin_manager.py:41] - Plugin Keyword_v0.1 registered, path=./plugins/keyword
+[WARNING][2024-12-10 10:19:13][plugin_manager.py:113] - Failed to import plugin tool: No module named 'chatgpt_tool_hub'
+[INFO][2024-12-10 10:19:13][godcmd.py:194] - [Godcmd] 因未设置口令，本次的临时口令为4603。
+[INFO][2024-12-10 10:19:13][godcmd.py:210] - [Godcmd] inited
+[INFO][2024-12-10 10:19:13][keyword.py:40] - [keyword] {}
+[INFO][2024-12-10 10:19:13][keyword.py:42] - [keyword] inited.
+[INFO][2024-12-10 10:19:13][linkai.py:35] - [LinkAI] inited, config={'group_app_map': {'测试群名1': 'default', '测试群名2': 'Kv2fXJcH'}, 'midjourney': {'enabled': False, 'auto_translate': True, 'img_proxy': True, 'max_tasks': 3, 'max_tasks_per_user': 1, 'use_image_create_prefix': True}, 'summary': {'enabled': False, 'group_enabled': True, 'max_file_size': 5000, 'type': ['FILE', 'SHARING']}}
+[INFO][2024-12-10 10:19:13][role.py:69] - [Role] inited
+[INFO][2024-12-10 10:19:13][dungeon.py:56] - [Dungeon] inited
+[INFO][2024-12-10 10:19:13][hello.py:38] - [Hello] inited
+[INFO][2024-12-10 10:19:13][finish.py:23] - [Finish] inited
+[INFO][2024-12-10 10:19:14][config.py:270] - 配置文件不存在，将使用config-template.json模板
+[INFO][2024-12-10 10:19:14][config.py:299] - [INIT] load config: {'channel_type': 'wx', 'model': '', 'open_ai_api_key': 'YOU*****KEY', 'claude_api_key': 'YOU*****KEY', 'text_to_image': 'dall-e-2', 'voice_to_text': 'openai', 'text_to_voice': 'openai', 'proxy': '', 'hot_reload': False, 'single_chat_prefix': ['bot', '@bot'], 'single_chat_reply_prefix': '[bot] ', 'group_chat_prefix': ['@bot'], 'group_name_white_list': ['ChatGPT测试群', 'ChatGPT测试群2'], 'image_create_prefix': ['画'], 'speech_recognition': True, 'group_speech_recognition': False, 'voice_reply_voice': False, 'conversation_max_tokens': 2500, 'expires_in_seconds': 3600, 'character_desc': '你是基于大语言模型的AI智能助手，旨在回答并解决人们的任何问题，并且可以使用多种语言与人交流。', 'temperature': 0.7, 'subscribe_msg': '感谢您的关注！\n这里是AI智能助手，可以自由对话。\n支持语音对话。\n支持图片输入。\n支持图片输出，画字开头的消息将按要求创作图片。\n支持tool、角色扮演和文字冒险等丰富的插件。\n输入{trigger_prefix}#help 查看详细指令。', 'use_linkai': False, 'linkai_api_key': '*****', 'linkai_app_code': ''}
+[INFO][2024-12-10 10:19:14][config.py:223] - [Config] User datas loaded.
+[INFO][2024-12-10 10:19:15][plugin_manager.py:50] - Loading plugins config...
+[INFO][2024-12-10 10:19:15][plugin_manager.py:88] - Scaning plugins ...
+[INFO][2024-12-10 10:19:15][plugin_manager.py:41] - Plugin Role_v1.0 registered, path=./plugins/role
+[INFO][2024-12-10 10:19:15][plugin_manager.py:41] - Plugin linkai_v0.1.0 registered, path=./plugins/linkai
+[INFO][2024-12-10 10:19:15][plugin_manager.py:41] - Plugin Dungeon_v1.0 registered, path=./plugins/dungeon
+[INFO][2024-12-10 10:19:15][plugin_manager.py:41] - Plugin BDunit_v0.1 registered, path=./plugins/bdunit
+[INFO][2024-12-10 10:19:15][plugin_manager.py:41] - Plugin Finish_v1.0 registered, path=./plugins/finish
+[INFO][2024-12-10 10:19:15][plugin_manager.py:41] - Plugin Godcmd_v1.0 registered, path=./plugins/godcmd
+[INFO][2024-12-10 10:19:15][plugin_manager.py:41] - Plugin Hello_v0.1 registered, path=./plugins/hello
+[INFO][2024-12-10 10:19:15][plugin_manager.py:41] - Plugin Banwords_v1.0 registered, path=./plugins/banwords
+[INFO][2024-12-10 10:19:15][plugin_manager.py:41] - Plugin Keyword_v0.1 registered, path=./plugins/keyword
+[WARNING][2024-12-10 10:19:15][plugin_manager.py:113] - Failed to import plugin tool: No module named 'chatgpt_tool_hub'
+[INFO][2024-12-10 10:19:15][godcmd.py:194] - [Godcmd] 因未设置口令，本次的临时口令为1324。
+[INFO][2024-12-10 10:19:15][godcmd.py:210] - [Godcmd] inited
+[INFO][2024-12-10 10:19:15][keyword.py:40] - [keyword] {}
+[INFO][2024-12-10 10:19:15][keyword.py:42] - [keyword] inited.
+[INFO][2024-12-10 10:19:15][linkai.py:35] - [LinkAI] inited, config={'group_app_map': {'测试群名1': 'default', '测试群名2': 'Kv2fXJcH'}, 'midjourney': {'enabled': False, 'auto_translate': True, 'img_proxy': True, 'max_tasks': 3, 'max_tasks_per_user': 1, 'use_image_create_prefix': True}, 'summary': {'enabled': False, 'group_enabled': True, 'max_file_size': 5000, 'type': ['FILE', 'SHARING']}}
+[INFO][2024-12-10 10:19:15][role.py:69] - [Role] inited
+[INFO][2024-12-10 10:19:15][dungeon.py:56] - [Dungeon] inited
+[INFO][2024-12-10 10:19:15][hello.py:38] - [Hello] inited
+[INFO][2024-12-10 10:19:15][finish.py:23] - [Finish] inited
+[ERROR][2024-12-10 10:19:16][wechat_channel.py:138] - No module named 'qrcode'
+Traceback (most recent call last):
+  File "/Users/mingjiangao/Desktop/robot/chatgpt-on-wechat/channel/wechat/wechat_channel.py", line 124, in startup
+    itchat.auto_login(
+  File "/Users/mingjiangao/Desktop/robot/chatgpt-on-wechat/lib/itchat/components/register.py", line 38, in auto_login
+    self.login(enableCmdQR=enableCmdQR, picDir=picDir, qrCallback=qrCallback,
+  File "/Users/mingjiangao/Desktop/robot/chatgpt-on-wechat/lib/itchat/components/login.py", line 56, in login
+    qrStorage = self.get_QR(enableCmdQR=enableCmdQR,
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mingjiangao/Desktop/robot/chatgpt-on-wechat/lib/itchat/components/login.py", line 132, in get_QR
+    qrCallback(uuid=uuid, status='0', qrcode=qrStorage.getvalue())
+  File "/Users/mingjiangao/Desktop/robot/chatgpt-on-wechat/channel/wechat/wechat_channel.py", line 86, in qrCallback
+    import qrcode
+ModuleNotFoundError: No module named 'qrcode'
+[INFO][2024-12-10 10:19:40][app.py:19] - signal 2 received, exiting...
+[INFO][2024-12-10 10:19:40][config.py:234] - [Config] User datas saved.
+[INFO][2024-12-10 10:20:08][config.py:270] - 配置文件不存在，将使用config-template.json模板
+[INFO][2024-12-10 10:20:08][config.py:299] - [INIT] load config: {'channel_type': 'wx', 'model': '', 'open_ai_api_key': 'YOU*****KEY', 'claude_api_key': 'YOU*****KEY', 'text_to_image': 'dall-e-2', 'voice_to_text': 'openai', 'text_to_voice': 'openai', 'proxy': '', 'hot_reload': False, 'single_chat_prefix': ['bot', '@bot'], 'single_chat_reply_prefix': '[bot] ', 'group_chat_prefix': ['@bot'], 'group_name_white_list': ['ChatGPT测试群', 'ChatGPT测试群2'], 'image_create_prefix': ['画'], 'speech_recognition': True, 'group_speech_recognition': False, 'voice_reply_voice': False, 'conversation_max_tokens': 2500, 'expires_in_seconds': 3600, 'character_desc': '你是基于大语言模型的AI智能助手，旨在回答并解决人们的任何问题，并且可以使用多种语言与人交流。', 'temperature': 0.7, 'subscribe_msg': '感谢您的关注！\n这里是AI智能助手，可以自由对话。\n支持语音对话。\n支持图片输入。\n支持图片输出，画字开头的消息将按要求创作图片。\n支持tool、角色扮演和文字冒险等丰富的插件。\n输入{trigger_prefix}#help 查看详细指令。', 'use_linkai': False, 'linkai_api_key': '*****', 'linkai_app_code': ''}
+[INFO][2024-12-10 10:20:08][config.py:223] - [Config] User datas loaded.
+[INFO][2024-12-10 10:20:09][plugin_manager.py:50] - Loading plugins config...
+[INFO][2024-12-10 10:20:09][plugin_manager.py:88] - Scaning plugins ...
+[INFO][2024-12-10 10:20:09][plugin_manager.py:41] - Plugin Role_v1.0 registered, path=./plugins/role
+[INFO][2024-12-10 10:20:09][plugin_manager.py:41] - Plugin linkai_v0.1.0 registered, path=./plugins/linkai
+[INFO][2024-12-10 10:20:09][plugin_manager.py:41] - Plugin Dungeon_v1.0 registered, path=./plugins/dungeon
+[INFO][2024-12-10 10:20:09][plugin_manager.py:41] - Plugin BDunit_v0.1 registered, path=./plugins/bdunit
+[INFO][2024-12-10 10:20:09][plugin_manager.py:41] - Plugin Finish_v1.0 registered, path=./plugins/finish
+[INFO][2024-12-10 10:20:09][plugin_manager.py:41] - Plugin Godcmd_v1.0 registered, path=./plugins/godcmd
+[INFO][2024-12-10 10:20:09][plugin_manager.py:41] - Plugin Hello_v0.1 registered, path=./plugins/hello
+[INFO][2024-12-10 10:20:09][plugin_manager.py:41] - Plugin Banwords_v1.0 registered, path=./plugins/banwords
+[INFO][2024-12-10 10:20:09][plugin_manager.py:41] - Plugin Keyword_v0.1 registered, path=./plugins/keyword
+[WARNING][2024-12-10 10:20:09][plugin_manager.py:113] - Failed to import plugin tool: No module named 'chatgpt_tool_hub'
+[INFO][2024-12-10 10:20:09][godcmd.py:194] - [Godcmd] 因未设置口令，本次的临时口令为5281。
+[INFO][2024-12-10 10:20:09][godcmd.py:210] - [Godcmd] inited
+[INFO][2024-12-10 10:20:09][keyword.py:40] - [keyword] {}
+[INFO][2024-12-10 10:20:09][keyword.py:42] - [keyword] inited.
+[INFO][2024-12-10 10:20:09][linkai.py:35] - [LinkAI] inited, config={'group_app_map': {'测试群名1': 'default', '测试群名2': 'Kv2fXJcH'}, 'midjourney': {'enabled': False, 'auto_translate': True, 'img_proxy': True, 'max_tasks': 3, 'max_tasks_per_user': 1, 'use_image_create_prefix': True}, 'summary': {'enabled': False, 'group_enabled': True, 'max_file_size': 5000, 'type': ['FILE', 'SHARING']}}
+[INFO][2024-12-10 10:20:09][role.py:69] - [Role] inited
+[INFO][2024-12-10 10:20:09][dungeon.py:56] - [Dungeon] inited
+[INFO][2024-12-10 10:20:09][hello.py:38] - [Hello] inited
+[INFO][2024-12-10 10:20:09][finish.py:23] - [Finish] inited
+[ERROR][2024-12-10 10:20:10][wechat_channel.py:138] - No module named 'qrcode'
+Traceback (most recent call last):
+  File "/Users/mingjiangao/Desktop/robot/chatgpt-on-wechat/channel/wechat/wechat_channel.py", line 124, in startup
+    itchat.auto_login(
+  File "/Users/mingjiangao/Desktop/robot/chatgpt-on-wechat/lib/itchat/components/register.py", line 38, in auto_login
+    self.login(enableCmdQR=enableCmdQR, picDir=picDir, qrCallback=qrCallback,
+  File "/Users/mingjiangao/Desktop/robot/chatgpt-on-wechat/lib/itchat/components/login.py", line 56, in login
+    qrStorage = self.get_QR(enableCmdQR=enableCmdQR,
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mingjiangao/Desktop/robot/chatgpt-on-wechat/lib/itchat/components/login.py", line 132, in get_QR
+    qrCallback(uuid=uuid, status='0', qrcode=qrStorage.getvalue())
+  File "/Users/mingjiangao/Desktop/robot/chatgpt-on-wechat/channel/wechat/wechat_channel.py", line 86, in qrCallback
+    import qrcode
+ModuleNotFoundError: No module named 'qrcode'
+[INFO][2024-12-10 10:20:14][app.py:19] - signal 2 received, exiting...
+[INFO][2024-12-10 10:20:14][config.py:234] - [Config] User datas saved.
