@@ -19,7 +19,7 @@ from camel.types import ModelPlatformType, ModelType
 from camel.models.openai_compatible_model import OpenAICompatibleModel
 from camel.agents import ChatAgent
 from camel.messages import BaseMessage
-from config import knowledge
+from config import knowledge, qwen_model, agent
 try:
     from voice.audio_convert import any_to_wav
 except Exception as e:
@@ -200,18 +200,7 @@ class ChatChannel(Channel):
                 else:
                     raise e  # 其他错误直接抛出
     def _generate_reply(self, context: Context, reply: Reply = Reply()) -> Reply:
-        qwen_model = ModelFactory.create(
-            model_platform=ModelPlatformType.OPENAI_COMPATIBLE_MODEL,
-            model_type="Qwen/Qwen2.5-32B-Instruct",
-            api_key="f6007aae-bfcd-4a74-893c-9743d2471f4e",
-            url="https://api-inference.modelscope.cn/v1",
-            model_config_dict=QwenConfig(temperature=0.2).as_dict(),
-        )
-        agent = ChatAgent(
-            system_message="You're a helpful assistant",
-            message_window_size=10,
-            model=qwen_model
-        )
+
         knowledge_message = BaseMessage.make_user_message(
             role_name="User", content=f"Based on the following knowledge: {knowledge}"
         )
