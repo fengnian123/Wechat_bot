@@ -359,18 +359,49 @@ def pconf(plugin_name: str) -> dict:
     """
     return plugin_config.get(plugin_name.lower())
 
+# # 配置 API 密钥
+# os.environ["FIRECRAWL_API_KEY"] = "fc-7cdc617d1c284ff2901bc797b143a657"
+# # 爬取知识并存储到本地
+# os.makedirs('local_data', exist_ok=True)
+# firecrawl = Firecrawl()
+# knowledge = firecrawl.crawl(url="https://qdrant.tech/documentation/overview/")
+# with open('local_data/qdrant_overview.md', 'w') as file:
+#     file.write(knowledge["data"][0]["markdown"])
+# qwen_model = ModelFactory.create(
+#             model_platform=ModelPlatformType.OPENAI_COMPATIBLE_MODEL,
+#             model_type="Qwen/Qwen2.5-32B-Instruct",
+#             api_key="f6007aae-bfcd-4a74-893c-9743d2471f4e",
+#             url="https://api-inference.modelscope.cn/v1",
+#             model_config_dict=QwenConfig(temperature=0.2).as_dict(),
+#         )
+# agent = ChatAgent(
+#             system_message="You're a helpful assistant",
+#             message_window_size=10,
+#             model=qwen_model
+#         )
+
 
 # 全局配置，用于存放全局生效的状态
 global_config = {"admin_users": []}
-
-
-
+    
+    
 # 配置 API 密钥
-os.environ["FIRECRAWL_API_KEY"] = "fc-7cdc617d1c284ff2901bc797b143a657"
-irecrawl = Firecrawl()
+os.environ["FIRECRAWL_API_KEY"] = "YOUR API"
 # 爬取知识并存储到本地
 os.makedirs('local_data', exist_ok=True)
 firecrawl = Firecrawl()
-knowledge = firecrawl.crawl(url="https://qdrant.tech/documentation/overview/")
+knowledge = firecrawl.crawl(url="Knowledge base URL")
 with open('local_data/qdrant_overview.md', 'w') as file:
     file.write(knowledge["data"][0]["markdown"])
+qwen_model = ModelFactory.create(
+            model_platform=ModelPlatformType.OPENAI_COMPATIBLE_MODEL,
+            model_type="Qwen/Qwen2.5-32B-Instruct",
+            api_key="YOUR API",
+            url="Model path",
+            model_config_dict=QwenConfig(temperature=0.2).as_dict(),
+        )
+agent = ChatAgent(
+            system_message="You're a helpful assistant",
+            message_window_size=10,
+            model=qwen_model
+        )
