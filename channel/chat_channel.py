@@ -19,7 +19,7 @@ from camel.types import ModelPlatformType, ModelType
 from camel.models.openai_compatible_model import OpenAICompatibleModel
 from camel.agents import ChatAgent
 from camel.messages import BaseMessage
-from config import knowledge, qwen_model, agent
+from config import qwen_model, agent
 try:
     from voice.audio_convert import any_to_wav
 except Exception as e:
@@ -201,10 +201,10 @@ class ChatChannel(Channel):
                     raise e  # 其他错误直接抛出
     def _generate_reply(self, context: Context, reply: Reply = Reply()) -> Reply:
 
-        knowledge_message = BaseMessage.make_user_message(
-            role_name="User", content=f"Based on the following knowledge: {knowledge}"
-        )
-        agent.update_memory(knowledge_message, "user")
+        # knowledge_message = BaseMessage.make_user_message(
+        #     role_name="User", content=f"Based on the following knowledge: {knowledge}"
+        # )
+        # agent.update_memory(knowledge_message, "user")
         assistant_response = agent.step(context.content)
         e_context = PluginManager().emit_event(
             EventContext(
