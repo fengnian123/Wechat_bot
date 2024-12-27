@@ -16,24 +16,18 @@ Install packages with `pip`:
 ```bash
   pip install -r requirements.txt
   pip install "camel-ai[all]==0.2.10"
+  crawl4ai-setup
+  playwright install chrome
 ```
 
 ### 📥 Completing configuration
 
 First we need to change some environment variables to replace our own API. Open the `config.py` file in the root directory and fill in the following variables. That is:
 
-- `os.environ["FIRECRAWL_API_KEY"] = "YOUR API"`: Replace `YOUR API` with the API_KEY of the firecrawl you got
-- `knowledge = firecrawl.crawl(url="Knowledge base URL")`: Replace `Knowledge base URL` with the address of the crawled knowledge base
 - `api_key="YOUR API"`: Replace `YOUR API` with the model API you got
 
 ```python
 # config.py
-os.environ["FIRECRAWL_API_KEY"] = "YOUR API"
-os.makedirs('local_data', exist_ok=True)
-firecrawl = Firecrawl()
-knowledge = firecrawl.crawl(url="Knowledge base URL")
-with open('local_data/qdrant_overview.md', 'w') as file:
-    file.write(knowledge["data"][0]["markdown"])
 qwen_model = ModelFactory.create(
             model_platform=ModelPlatformType.OPENAI_COMPATIBLE_MODEL,
             model_type="Qwen/Qwen2.5-32B-Instruct", 
