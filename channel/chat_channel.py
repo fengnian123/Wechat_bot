@@ -19,7 +19,7 @@ from camel.types import ModelPlatformType, ModelType
 from camel.models.openai_compatible_model import OpenAICompatibleModel
 from camel.agents import ChatAgent
 from camel.messages import BaseMessage
-from config import qwen_model, agent
+from config import knowledge, qwen_model, agent
 try:
     from voice.audio_convert import any_to_wav
 except Exception as e:
@@ -186,25 +186,12 @@ class ChatChannel(Channel):
             # reply的发送步骤
             self._send_reply(context, reply)
             print("here13--")
-    # Firecrawl 爬取逻辑
-    def safe_crawl(url):
-        os.environ["FIRECRAWL_API_KEY"] = "fc-7cdc617d1c284ff2901bc797b143a657"
-        firecrawl = Firecrawl()
-        while True:
-            try:
-                return firecrawl.crawl(url=url)
-            except RuntimeError as e:
-                if "Rate limit exceeded" in str(e):
-                    print("Rate limit hit. Waiting for reset...")
-                    time.sleep(30)  # 等待 30 秒后重试
-                else:
-                    raise e  # 其他错误直接抛出
+    
     def _generate_reply(self, context: Context, reply: Reply = Reply()) -> Reply:
-
-        # knowledge_message = BaseMessage.make_user_message(
-        #     role_name="User", content=f"Based on the following knowledge: {knowledge}"
-        # )
-        # agent.update_memory(knowledge_message, "user")
+        knowledge_message = BaseMessage.make_user_message(
+            role_name="User", content=f"Based on the following knowledge: {knowledge}"
+        )
+        agent.update_memory(knowledge_message, "user")
         assistant_response = agent.step(context.content)
         e_context = PluginManager().emit_event(
             EventContext(
